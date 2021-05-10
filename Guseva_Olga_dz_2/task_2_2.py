@@ -14,7 +14,8 @@ for numb in temp_1:
         temp_2.append('"')
         temp_2.append(new_numb)
         temp_2.append('"')
-    else: temp_2.append(numb)
+    else:
+        temp_2.append(numb)
 temp_3 = ' '.join(temp_2)
 print(temp_3)
 
