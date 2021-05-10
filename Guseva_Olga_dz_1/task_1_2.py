@@ -1,32 +1,27 @@
+sum_ins_number = 0
+result = 0
 
 numb_list = []
 
 for item in range (1, 1001, 2):
     numb_list.append(item ** 3)
 
-result_sum = 0
-for number in numb_list:
-    number_summ = 0
-    item = number
-    while number != 0:
-        number_summ += (number % 10)
-        number = number // 10
-    if number_summ % 7 == 0:
-        result_sum += item
 
-for dev in numb_list:
-    dev_summ = dev + 17
-    resul_dev = dev_summ
+for numb_in_list in numb_list:
+    item_2 = numb_in_list
+    while item_2 != 0:
+        result = result + item_2 % 10
+        item_2 = item_2 // 10
+        if result % 7 == 0:
+            sum_ins_number = sum_ins_number + numb_in_list
+print(sum_ins_number)
 
-    dev_i = 0
-    dev_finish = 0
 
-    while resul_dev != 0:
-        dev_i += (resul_dev % 10)
-        resul_dev = resul_dev // 10
-    if dev_i % 7 == 0:
-        dev_finish += dev_summ
-        print(dev_finish)
+
+
+
+
+
 
 
 
