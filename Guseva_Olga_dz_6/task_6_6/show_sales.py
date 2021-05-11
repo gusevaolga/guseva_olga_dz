@@ -19,6 +19,9 @@ if __name__ == "__main__":
         show_sales()
     elif len(sys.argv) == 2:
         start = int(sys.argv[1])
-        end = int(sys.argv[2])
+        show_sales(start)
+    if len(sys.argv) == 3:
+        start = len(sys.argv[1])
+        end = len(sys.argv[2])
         show_sales(start, end)
     exit(0)
