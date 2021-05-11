@@ -7,8 +7,8 @@ class Matrix:
         result_str = ''
         for st in self.matr:
             result_str += (' '.join(map(str, st)))
-            result_str += '\п'
-            return result_str
+            result_str += '\n'
+        return result_str
 
     def __add__(self, other):
         result_matrix = []
