@@ -5,7 +5,8 @@ def thesaurus (*args):
         first_let = item[0]
         if not dict_names.get(first_let):
             dict_names[first_let] = [item]
-        else: dict_names[first_let].append(item)
+        else:
+            dict_names[first_let].append(item)
     return dict(sorted(dict_names.items()))
 
 names = thesaurus("Андрей", "Иван", "Артур", "Руслан", "Екатерина", "Элла", "Римма")
