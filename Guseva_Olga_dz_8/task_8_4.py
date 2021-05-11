@@ -9,8 +9,13 @@ def value_cheker(exp):
                 return func(x)
             else:
                 raise ValueError(f'wrong val {x}')
+<<<<<<< Updated upstream
         return wrapper()
     return _value_cheker()
+=======
+        return wrapper
+    return _value_cheker
+>>>>>>> Stashed changes
 
 
 @value_cheker(lambda x: x > 0)
